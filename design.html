@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maravelo - design your bike</title>
+    <meta name="description" content="Med Young with Maravelo har du nu mulighed for at designe din egen elcykel, så den bliver præcis som du ønsker den.">
+ 
+    <!--her linker vi til bootstrap css --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <!--her linker vi til vores eget css --> 
+      <link rel="stylesheet" href="design.css">
+    <!--linker til vores font--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Maravelos logo-->
+   <a href="index.html"> <img class="billede" src="img/maravelo.sort.logo.png" alt="Maravelo logo"></a>
+    <!--søgefelt-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Søg" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Søg</button>
+          </form>
+        </div>
+      </nav>
+<!--menu-->
+<div class="menudesign">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-link" href="index.html">Forside</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <div class="tyk">
+              <a class="nav-link " aria-current="page"  href="design.html">Design your bike</a>
+            </div>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="galleri.html">Galleri</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="getyourbike.html">Get your bike</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+           
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+      
+    
+     <!--Design din cykel boks START-->
+     <div class="scroll-down"></div>
+     <div class="product-configurator-image" data-product-config-image="wrapper">
+         
+     <img id="imgDisp"  alt="frame" class="bike" src="img/handcykel.jpg">
+   </div>
+   
+<div class="box">
+   <div>
+    <p class="model">
+        <strong>Model</strong> 
+    </p> 
+   
+    <button class="cykel-knap-1" onclick="changeImage('roed-cykel-2.png')">Citybike</button>
+    <button class="cykel-knap-2" onclick="changeImage('maravelo-sportsbike-red.png')">Sportsbike</button>
+ 
+   </div>
+   <hr>
+   <div>
+       <p class="kategorier" >
+           <strong>Stelfarve</strong> 
+       </p> 
+       <button class="rød" onclick="changeImage('roed-cykel-2.png')" ></button>
+       <button class="blå" onclick="changeImage('blaa_cykel.png')"></button>
+     <button class="grøn" onclick="changeImage('groen.cykel.png')" ></button>
+       
+      </div>
+      <hr>
+      <div>
+       <p class="kategorier" >
+           <strong>Størrelse</strong> 
+       </p> 
+       <button class="valgmulighed" >52 cm</button>
+       <button class="valgmulighed-2" >56 cm</button>
+      </div>
+      <hr>
+      <div>
+       <p class="kategorier" >
+           <strong>Sadel</strong> </p> 
+          
+               <img class="sadel-1" src="maravelo-komfort-sadel.png" alt="Billede af Maravelo komfort sadel">
+               <button class="sadel-1-navn">Maravelo komfort sadel</button>
+               <img class="sadel-1" src="maravelo-sporty-sadel.png" alt="Billede af Maravelo sporty sadel">
+               <button class="sadel-2-navn" >Maravelo sporty sadel</button>
+      </div>
+      <hr>
+      <div>
+       <p class="kategorier" >
+           <strong>Ringeklokke</strong> 
+       </p> 
+       <button class="valgmulighed" >Blå metal</button>
+       <button class="valgmulighed-2" >Metal</button>
+       
+      </div>
+      <hr>
+      <div>
+       <p class="kategorier" >
+           <strong>Betalingsmuligheder</strong> 
+       </p> 
+       <button class="valgmulighed" >Kontant</button>
+       
+       <button class="valgmulighed-2" >Young with Maravelo</button>
+      </div>
+   </div>
+  <!--Design din cykel boks SLUT-->
+
+  <!--Pris og læg i kurv START-->
+  
+   <div class="row-2">
+       <div class="column-2">
+         <h2 class="pris">DKK 898,95,- pr. måned</h2>
+       </div>
+       <div>
+         <button class="læg-i-kurv"> <a class="add-to-card" href="indkøbskurv.html"> ADD TO CARD</a></button>
+       </div>
+     </div>
+
+  <!--pris og læg i kurv SLUT-->
+  <!--Information om cyklerne START-->
+  <div class="row">
+    <div class="column">
+      <h2 class="design-your-bike">Design your bike</h2>
+     <p class="design-your-bike-beskrivelse">Konceptet Design your bike giver dig muligheden for at designe din egen cykel. Sæt dit præg og gør din cykel mere personlig.    
+        Det er super nemt: <br>
+        &#9679; Vælg den type cykel der passer til dit behov <br>
+        &#9679; Begynd at designe den med størrelse og stelfarve <br>
+        &#9679; Vælg om du ønsker en komfortsadel eller en sadel med sporty look <br>
+        &#9679; Vælg selv hvilken farve du ønsker til din ringeklokke <br> </p>
+    </div>
+    
+    <div class="column">
+      <button class="collapsible">Specifikationer</button>
+      <div class="content">
+       <p class="teknik">Teknik:</p> 
+       <p>  &#9679; Pinkode og deaktiverede pedaler <br>
+       &#9679; Display: Nyt Gen2 display med valgfri pinkode <br>
+       &#9679; Hjul: 26” eller 27,5” <br>
+       &#9679; Vægt: 21 kg. <br>
+       &#9679; Farve: Rød <br>
+       &#9679; Motor 48Volt, batteri  500 Watt. <br>
+       &#9679; Gear: 8 Speed elektrisk <br>
+       &#9679;  Rækkevidde:  ca. 100km <br>
+       &#9679;  Varianter: 25 km/t </p>         </div>
+      <button class="collapsible">Sikkerhed</button>
+      <div class="content">
+        <p>Maravelo har de mest topsikrede el-cykler i forhold til tyveri. Ikke nok med at cyklen kun kan køre, hvis du kender den tilhørende pinkode, så opfanger kontoret hvis pinkoden er skrevet forkert flere gange i streg. Derefter bliver ejeren af el-cyklen ringet op og bedt om at tjekke op på sin cykel.</p>
+      </div>
+      <button class="collapsible">100% vedligeholdelsesfrit</button>
+      <div class="content">
+        <p>Bygget omkring 48 volt teknologi med 75 NM, der sendes til baghjulet via 8 integrerede sekventielle gear, der skifter elektrisk uden afbrydelse.</p>
+      </div>
+    </div>
+  </div>
+
+
+<!--Information om cyklerne SLUT-->
+<!--Stort billede med tekst henover START-->
+<div class="container">
+<img class="maravelo-red" src="img/sara-3.jpg" alt="Pige på maravelo cykel" >
+<div class="centered">GET A BIKE, GET A LIFE.</div>
+</div>
+<!--Stort billede med tekst henover SLUT-->
+
+
+
+<!--- Content med sidestillet billeder START --->
+<div class="info">
+<div class="row align-items-start">
+   <div class="col-lg-6">
+     <img class="billede1" src="img/naer.JPG" alt="tæt på maravelo cykel">
+   </div>
+   <div class="col-lg-6">
+   
+       <h1 class="maravelo-content-overskrifter">Citybike</h1>
+       <p class="maravelo-content-tekst">Maravelo Citybike er et must-have, især til den unge generation, med dens nye super smarte display. Cyklen skifter lynhurtigt i gearene uden bemærkning, også under fuld pedalbelastning.
+         Cyklens e-drive er hermetisk lukket og er derfor også immun overfor vand og snavs. 
+         </p>
+
+   </div>
+   
+ </div>
+
+ <div class="row align-items-start">
+   
+   <div class="col-lg-6">
+       <h1 class="maravelo-content-overskrifter"> Sportsbike</h1>
+       <p class="maravelo-content-tekst">Med denne sportsbike hører den nye opdatering af den revolutionerende F8.11 e-drive med. Cyklen skifter derfor endnu hurtigere gear, uden afbrydelse også under fuld pedalbelastning. 
+         Denne cykels e-drive er også hermetisk lukket og er derfor også immun overfor vand og snavs, der ellers kunne gå ind og påvirke den el-drevne motor. Konstruktionen sikrer minimalt energitab og du kan nemt nå 35 km/t og få en rækkevidde på op til 100 km. 
+         </p>
+   </div>
+   <div class="col-lg-6">
+       <img class="billede2" src="maravelo-hjul.jpg" alt="tæt på maravelos hjul">
+     </div>
+ </div>
+ <div class="row align-items-start">
+   <div class="col-lg-6">
+     <img class="billede1" src="img/naerlogo.JPG" alt="styr og logo på maravelo cykel ">
+   </div>
+   <div class="col-lg-6">
+       <h1 class="maravelo-content-overskrifter"> Young with Maravelo</h1>
+       <p class="maravelo-content-tekst"> Når du køber en elcykel hos Maravelo, har du forskellige måder at financere din elcykel på. Du kan vælge at betale kontant, med "Ride and smile" eller "Young with Maravelo". <br>
+        Vores nye koncept med "Young with Maravelo", hjælper dine forældre eller et familiemedlem med udbetalingen på din elcykel, så den derefter bliver billigere i afbetaling.</p>
+   
+ </div>
+</div>
+
+
+
+
+
+<footer class="footer">
+
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h5 class="footer-overskrift">Nyhedsbrev</h5>
+          <p class="footer-tekst">Vil du være med på de nyeste nyheder og tilbud direkte i din indbakke? <br> Så tilmeld dig her, og bliv en del af vores fordelagtige kundeklub.</p>
+          <div class="main">
+            <form id="singular-form">
+                <button class="shown" type="button" id="subs">Tilmeld dig her</button>
+                <div id="email-input">
+                    <input type="text" placeholder="E-mail" id="email">
+                    <button type="button" class="addbut1" disabled="disabled">Tilmeld</button>
+                </div>
+                <div id="success">Tak for tilmelding!</div>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script  src="function.js"></script>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-overskrift">Åbningstider</h5>
+          <p class="footer-tekst"><strong> Mandag-søndag</strong> <br> <strong> Butik</strong>: 10:00-17:00</p>
+          <h5 class="footer-overskrift">Adressse</h5>
+          <p class="footer-tekst">Bakkegårdsvej 106 | 3050 Humlebæk | Denmark</p>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-overskrift1">Kontakt</h5>
+          <p class="footer-tekst"><strong>Tlf</strong>: +45 60946095 <br><strong>Mail</strong>: maravelo@maravelo.dk</b></p>
+          <h5 class="footer-overskrift">Følg os</h5>
+          <a href="https://www.instagram.com/maravelo.eu/"> <img src="img/insta.maravelo.ikon.png" class="some" alt="instagram logo til maravelo"></a>
+          <a href="https://www.facebook.com/mymaravelo/"> <img src="img/fb.maravelo.ikon.png" class="some1" alt="facebook logo til maravelo"></a>
+            <a href="https://www.youtube.com/channel/UClc_JPw4MoMq8nz-RBCwXEg"> <img src="img/youtube.maravelo.ikon.png" class="some1" alt="youtube logo til maravelo"></a>
+          
+        </div>
+      </div>
+</footer>
+<!--- Content med sidestillet billeder SLUT --->
+
+<!--Javascript link til bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+ 
+<script>
+  //Gør at billederne skifter når du klikker på forskellige knapper
+function changeImage(imgName)
+{
+ image = document.getElementById('imgDisp');
+ image.src = imgName;
+}
+//Collapsible til information om cyklerne
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  
+
+  </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!--Vores javaspript-->
+    <script src="main.js"></script>
+</body>
+</html>

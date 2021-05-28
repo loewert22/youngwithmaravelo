@@ -1,0 +1,562 @@
+body{
+    background-color: #f9f9f9;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.billede{
+width: 40%;
+margin-left: 25px;
+}
+
+.bg-light{
+float: right;
+margin-top: 25px;
+background-color:#f9f9f9 !important;
+}
+.navbar-light{
+    background-color:#f9f9f9 !important;
+}
+.container-fluid{
+    background-color: #f9f9f9;
+}
+h1{
+margin-left: 25px;  
+margin-top: 150px;
+font-weight: bolder;
+}
+h2{
+    margin-left: 25px;  
+    margin-top: 150px;
+    font-weight: bolder;
+    margin-bottom: -50px; 
+}
+
+.forsideover{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+  .forside{
+      margin-left: 25px;
+      margin-bottom: 100px;
+  }  
+
+.cykelbillede{
+    width: 733px !important;
+    
+    
+}
+.ikoner{
+    width:733px ;
+}
+.kortoverskrift{
+    margin-left: 25px;
+    font-weight: bold;
+}
+.kortbesked{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.knap{
+    width: 100px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.navbar-nav{
+    margin-right: 400px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar-nav a:hover:not(.active) {
+    font-size: 19px;
+    color: black;
+    font-weight: bolder;
+  }
+
+  
+  div.vertical-line{
+    width: 1px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+      margin-top: 10px;
+  }
+  .karusel{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* footer*/
+  .footer{
+      background-color: #449348;
+  }
+  .footer-overskrift{
+    margin-left: 25px;
+    padding-top:20px ;
+    font-weight: bold;
+  }
+  .footer-overskrift1{
+    margin-left: 25px;
+    margin-top: -20px;
+    font-weight: bold;
+  }
+  .footer-tekst{
+      margin-left: 25px;
+      padding-top:20px ;
+      font-size: 15px;
+  }
+  /*Her er vores tilmeld nyhedsbrev knap*/
+  .main {
+    width: 445px !important;
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    margin-left: 25px;
+    overflow: hidden;
+    transition: width .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.main>#singular-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.main>#singular-form button {
+    width: 9rem;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.main>#singular-form>button#subs {
+    padding: 0;
+    width: 100%;
+    color: #449348;
+    background-color: transparent;
+    z-index: 3;
+}
+.main>#singular-form>#email-input {
+    z-index: 2;
+}
+.main>#singular-form>#email-input>input {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0 26% 0 3%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .6s ease .4s;
+}
+.main>#singular-form>#email-input>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #449348;
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .6s ease .4s;
+}
+.main>#singular-form>#success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ed462f;
+    font-weight: bold;
+    z-index: 1;
+}
+.main>#singular-form>button#subs,
+.main>#singular-form>#email-input,
+.main>#singular-form>#success {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    opacity: 0;
+}
+.main>#singular-form>button#subs {
+    transition: all .6s ease;
+}
+.main>#singular-form>#email-input {
+    transform: scale(1);
+    opacity: 1;
+    transition: all .6s ease .4s;
+    width: 400px;
+}
+ 
+.main>#singular-form>#success {
+    transition: all .2s ease .6s;
+}
+.main>#singular-form>button#subs.shown,
+.main>#singular-form>#email-input.shown,
+.main>#singular-form>#success.shown,
+.main>#singular-form>#email-input>button.shown,
+.main>#singular-form>#email-input>input.shown {
+    transform: scale(1);
+    opacity: 1;
+}
+#singular-form{
+    width: 400px;
+}
+
+.some{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+.some1{
+    width: 40px;
+    height: 40px;
+    margin-left:5px;
+}
+/* fotogalleri*/
+.galleri{
+    margin-top: 150px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+
+
+/* modal billede galleriet*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.preview {
+    width: 100%;
+}
+.foto{
+    margin-left: 300px;
+    margin-right: 10%;
+    width: 80%;
+}
+
+
+.row>.col {
+    padding: 0 8px;
+}
+
+.col {
+    margin-bottom: 1%;
+    float: left;
+    width: 33.33%;
+    z-index: 100;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 50px 62px 0px 62px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 0 0;
+    width: 80%;
+    max-width: 550px;
+    border: 0px solid;
+    border-color: white;
+    
+    
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.image-slide {
+    width: 100%;
+    max-width: 900px;
+}
+
+.modal-preview {
+    width: 100%;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img.preview,
+img.modal-preview {
+    opacity: 1;
+}
+
+img.active {
+    opacity: 0.6;
+}
+
+.preview:hover,
+.modal-preview:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 9px 20px 0 rgba(0, 0, 0, 1);
+}
+/* Content */
+
+.content {
+    border: 0px solid;
+    border-color: black;
+    background-color: #f9f9f9;
+    padding: 10px;
+    
+
+}
+
+.close {
+    color:#f9f9f9;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 2%;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f9f9f9;
+}
+
+@media screen and (max-width: 1050px) {
+    .col {
+        width: 50%;
+    }
+    .modal {
+        padding: 30px 32px 0px 32px;
+    }
+    .modal-content {
+        margin-top: 100px;
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .modal {
+        padding: 30px 10px 0px 10px;
+    }
+}
+.video-galleri{
+    margin-left: 300px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+   
+}
+.play{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+/* Get your bike*/
+.get{
+margin-top: 200px;
+margin-left: 25px;
+
+}
+.ikonerne{
+    width: 100%;
+}
+
+.streg{
+    text-decoration-line: underline;
+    
+}
+.tekst{
+    margin-left: px;
+    margin-left: -10px;
+}
+.tekst1{
+    margin-left: 70px;
+    margin-right: -60px;
+}
+.tekst2{
+    margin-left:150px;
+    margin-right: -150px;
+}
+.tekst3{
+    margin-left: 200px;
+    margin-right: -200px;
+}
+.tekst4{
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+  
+
+/* kontakt*/
+
+.kontakt{
+    margin-top: 150px;
+    font-weight: bolder;
+    text-align: center;
+}
+.kontakttekst{
+    text-align: center;
+}
+
+.fotokontakt{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #449348;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #449348;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 130px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  hr{
+    display: block;
+    margin-top: 150px;
+    margin-bottom: 0.5em;
+    margin-left: 200px;
+    margin-right:200px ;
+    border: 2px  #449348;
+    border-width: 1px;
+    border: 2px solid #449348;
+    margin-bottom: 100px;
+    color: #449348;
+  }
+  .mød{
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .somedier{
+      margin-left: 25px;
+      
+  }
+  .img-fluid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .sometekst{
+      margin-left: 25px;
+      margin-top: 20px;
+  }

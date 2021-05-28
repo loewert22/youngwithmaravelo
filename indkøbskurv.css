@@ -1,0 +1,313 @@
+body{
+  background-color: #f9f9f9;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.billede{
+width: 40%;
+margin-left: 25px;
+
+}
+
+.bg-light{
+
+margin-top: 25px;
+background-color:#f9f9f9 !important;
+
+}
+.søg{
+  float: right;
+}
+.menudesign{
+  margin-left: 400px;
+  
+}
+.navbar-light{
+  background-color:#f9f9f9 !important;
+}
+.container-fluid{
+  background-color: #f9f9f9;
+}
+.navbar-nav{
+  margin-right: 400px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar-nav a:hover:not(.active) {
+  font-size: 19px;
+  color: black;
+  font-weight: bolder;
+}
+
+
+div.vertical-line{
+  width: 1px; /* Line width */
+  background-color: black; /* Line color */
+  height: 100%; /* Override in-line if you want specific height. */
+  float: left; /* Causes the line to float to left of content. 
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+    margin-top: 10px;
+}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    
+   
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container-2 {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid  #ccb463;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 20px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .afslut-ordre-2 
+  {
+    border: none;
+    text-decoration: none;
+    background-color:#AB9138; opacity: 0.8;
+    font-size: 15px;
+    width: 460px;
+    height: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    Padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+  .afslut-ordre-2:hover 
+  {
+     background-color: #AB9138; opacity: 0.5;
+  }
+
+  /* footer*/
+  .footer{
+    background-color: #449348;
+}
+.footer-overskrift{
+  margin-left: 25px;
+  padding-top:20px ;
+  font-weight: bold;
+}
+.footer-overskrift1{
+  margin-left: 25px;
+  margin-top: -20px;
+  font-weight: bold;
+}
+.footer-tekst{
+    margin-left: 25px;
+    padding-top:20px ;
+    font-size: 15px;
+}
+/*Her er vores tilmeld nyhedsbrev knap*/
+.main {
+  width: 445px !important;
+  height: 50px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  margin-left: 25px;
+  overflow: hidden;
+  transition: width .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.main>#singular-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.main>#singular-form button {
+  width: 9rem;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.main>#singular-form>button#subs {
+  padding: 0;
+  width: 100%;
+  color: #449348;
+  background-color: transparent;
+  z-index: 3;
+}
+.main>#singular-form>#email-input {
+  z-index: 2;
+}
+.main>#singular-form>#email-input>input {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 0 26% 0 3%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .6s ease .4s;
+}
+.main>#singular-form>#email-input>button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #449348;
+  color: white;
+  opacity: 0;
+  transform: scale(0);
+  transition: all .6s ease .4s;
+}
+.main>#singular-form>#success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ed462f;
+  font-weight: bold;
+  z-index: 1;
+}
+.main>#singular-form>button#subs,
+.main>#singular-form>#email-input,
+.main>#singular-form>#success {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  opacity: 0;
+}
+.main>#singular-form>button#subs {
+  transition: all .6s ease;
+}
+.main>#singular-form>#email-input {
+  transform: scale(1);
+  opacity: 1;
+  transition: all .6s ease .4s;
+  width: 400px;
+}
+
+.main>#singular-form>#success {
+  transition: all .2s ease .6s;
+}
+.main>#singular-form>button#subs.shown,
+.main>#singular-form>#email-input.shown,
+.main>#singular-form>#success.shown,
+.main>#singular-form>#email-input>button.shown,
+.main>#singular-form>#email-input>input.shown {
+  transform: scale(1);
+  opacity: 1;
+}
+#singular-form{
+  width: 400px;
+}
+
+.some{
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+.some1{
+  width: 40px;
+  height: 40px;
+  margin-left:5px;
+}
